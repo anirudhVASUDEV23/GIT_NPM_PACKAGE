@@ -27,9 +27,13 @@ jobs:
       - name: Build package
         run: npm run build
       
-      - name: Publish to GitHub Packages
+      - name: Configure .npmrc for GitHub Packages
         run: |
-          npm config set @YOUR_GITHUB_USERNAME:registry https://npm.pkg.github.com
-          npm publish
+          echo "@anirudhVASUDEV23:registry=https://npm.pkg.github.com" > .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
+          echo "always-auth=true" >> .npmrc
+      
+      - name: Publish to GitHub Packages
+        run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
