@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "jsx": "react-jsx",
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  },
+  "include": ["Brands/**/*.ts", "Brands/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
+}

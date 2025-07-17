@@ -1,0 +1,31 @@
+{
+  "name": "uzence-brands",               
+  "version": "1.0.0",
+  "description": "Reusable brand icons as React components",
+  "main": "dist/index.js",                
+  "types": "dist/index.d.ts",            
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["react", "brand", "icons", "components"],
+  "author": "Uzence",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "typescript": "^5.8.3"
+  },
+  "files": ["dist"],
+  "publishConfig": {
+    "@anirudhVASUDEV23:registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anirudhVASUDEV23/GIT_NPM_PACKAGE.git"
+  }
+}
