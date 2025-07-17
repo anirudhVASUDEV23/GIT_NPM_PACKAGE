@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@YOUR_GITHUB_USERNAME'  # Replace with your GitHub username or organization
+          scope: '@anirudhVASUDEV23'  # Replace with your GitHub username or organization
       
       - name: Install dependencies
         run: npm ci
