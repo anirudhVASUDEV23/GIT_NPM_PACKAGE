@@ -1,3 +1,5 @@
+<img width="2955" height="1509" alt="image" src="https://github.com/user-attachments/assets/f1ae2931-459d-4748-bbb1-10ee31d82593" />
+
 # Uzence Brands 🏢
 
 **3300+ brand logos as React components**  
@@ -51,4 +53,4 @@ All major brands:
 🔹 And 3200+ more!
 
 
-<img width="2955" height="1509" alt="image" src="https://github.com/user-attachments/assets/f1ae2931-459d-4748-bbb1-10ee31d82593" />
+
