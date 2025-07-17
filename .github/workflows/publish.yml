@@ -29,11 +29,17 @@ jobs:
       
       - name: Configure .npmrc for GitHub Packages
         run: |
+          # Configure to only use GitHub Packages for your scope
           echo "@anirudhVASUDEV23:registry=https://npm.pkg.github.com" > .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
           echo "always-auth=true" >> .npmrc
+          
+          # Explicitly set the registry to GitHub Packages
+          npm config set registry https://npm.pkg.github.com/
+          npm config set @anirudhVASUDEV23:registry https://npm.pkg.github.com/
       
       - name: Publish to GitHub Packages
-        run: npm publish --access public
+        run: npm publish --registry=https://npm.pkg.github.com/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
